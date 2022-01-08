@@ -1,0 +1,500 @@
+ @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@800&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+ * {
+     box-sizing: border-box;
+     color: #fff;
+ }
+ 
+ section {
+     background-image: url(/archivos/home/background-home-desktop.jpg);
+     height: 100vh;
+     background-attachment: fixed;
+     background-size: 100%;
+     background-repeat: no-repeat;
+     background-origin: border-box;
+     display: flex;
+ }
+ 
+ header {
+     display: flex;
+     justify-content: space-between;
+     padding: 10px 30px;
+     align-items: center;
+     position: fixed;
+     width: 100%;
+     z-index: 200;
+ }
+ 
+ nav {
+     display: flex;
+     background: transparent;
+     padding: 30px 100px !important;
+     position: relative;
+     right: 0 !important;
+     overflow: hidden;
+     justify-content: center !important;
+ }
+ 
+ nav::after {
+     filter: blur(1);
+     content: "";
+     background: rgba(255, 255, 255, 0.178);
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     display: flex;
+     z-index: 0;
+ }
+ 
+ ul {
+     list-style: none;
+     display: flex;
+     align-items: center;
+     margin: 0;
+     justify-content: center;
+     padding: 0;
+     z-index: 50;
+ }
+ 
+ ul li {
+     margin: 0 20px;
+     font-family: sans-serif;
+     text-transform: uppercase;
+     position: relative;
+     font-weight: 700;
+ }
+ 
+ ul li::after {
+     content: "";
+     width: 0;
+     height: 2px;
+     display: inline-block;
+     background-color: #aaa;
+     position: absolute;
+     inset: 0;
+     margin: auto;
+     top: 24px;
+     transition: all .3s;
+ }
+ 
+ li:hover::after {
+     width: 100%;
+ }
+ 
+ nav ul li a {
+     color: #fff;
+ }
+ 
+ a {
+     text-decoration: none;
+ }
+ 
+ nav a:hover {
+     color: #fff;
+ }
+ 
+ .home__intro {
+     color: #fff;
+     display: flex;
+     width: 100%;
+     height: 100px;
+     position: relative;
+     top: 235px !important;
+     padding: 0 130px;
+     justify-content: space-between;
+ }
+ 
+ .parrafos {
+     width: 23%;
+     font-size: 18px;
+     margin: 10px;
+     text-align: justify;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ 
+ .home__intro h1 {
+     font-family: 'Cairo', sans-serif;
+     color: #fff;
+     letter-spacing: 5px;
+     font-size: 100px;
+ }
+ 
+ .circulo {
+     width: 300px;
+     background-color: #ccc;
+     height: 300px;
+     display: flex;
+     align-items: center;
+     border-radius: 50%;
+     justify-content: center;
+     position: relative;
+     bottom: 0px;
+     align-content: center;
+     transition: all .5s;
+ }
+ 
+ .circulo h1 {
+     color: #000;
+     font-size: 40px;
+ }
+ 
+ .circulo:hover {
+     background: #222;
+ }
+ 
+ .circulo:hover h1 {
+     color: #fff;
+ }
+ 
+ #destination {
+     background-image: url(/archivos/destination/background-destination-desktop.jpg);
+     height: 100vh;
+     flex-direction: column;
+     padding: 200px;
+ }
+ 
+ .planet {
+     display: flex;
+     justify-content: space-around;
+     width: 100%;
+     position: relative;
+ }
+ 
+ .planet-characteristics {
+     margin-left: 450px;
+ }
+ 
+ .planet-characteristics ul {
+     justify-content: flex-start !important;
+     left: -19px;
+     position: relative;
+     width: max-content;
+ }
+ 
+ .planet-description {
+     margin: 40px 0 70px 0;
+ }
+ 
+ .options {
+     position: relative;
+     bottom: 40px;
+     user-select: none;
+ }
+ 
+ .destination__title {
+     display: flex;
+     margin-bottom: 70px;
+     align-items: center;
+ }
+ 
+ span {
+     font-family: sans-serif;
+     color: rgba(255, 255, 255, 0.363);
+     font-size: 20px;
+     margin: 0 5px;
+ }
+ 
+ #distance {
+     display: flex;
+     width: 100%;
+     justify-content: space-between;
+     align-items: baseline;
+     border-top: 1px solid rgba(204, 204, 204, 0.466);
+     padding-top: 30px;
+ }
+ 
+ #numero {
+     margin-right: 10px !important;
+ }
+ 
+ .options ul li {
+     cursor: pointer;
+ }
+ 
+ #name {
+     text-transform: uppercase !important;
+ }
+ 
+ .planet-img {
+     user-select: none;
+ }
+ 
+ div.moon {
+     animation: moon .4s 1;
+ }
+ 
+ div.mars {
+     animation: mars .4s 1;
+ }
+ 
+ div.europa {
+     animation: europa .4s 1;
+ }
+ 
+ div.titan {
+     animation: titan .4s 1;
+ }
+ 
+ @keyframes moon {
+     from {
+         transform: translate(-50px, 0px);
+         opacity: .6;
+     }
+     to {
+         transform: translate(0, 0);
+         opacity: 1;
+     }
+ }
+ 
+ @keyframes mars {
+     from {
+         transform: translate(-50px, 0px);
+         opacity: .6;
+     }
+     to {
+         transform: translate(0, 0);
+         opacity: 1;
+     }
+ }
+ 
+ @keyframes europa {
+     from {
+         transform: translate(-50px, 0px);
+         opacity: .6;
+     }
+     to {
+         transform: translate(0, 0);
+         opacity: 1;
+     }
+ }
+ 
+ @keyframes titan {
+     from {
+         transform: translate(-50px, 0px);
+         opacity: .6;
+     }
+     to {
+         transform: translate(0, 0);
+         opacity: 1;
+     }
+ }
+ 
+ .crew {
+     height: 100vh;
+     width: 100%;
+     background-image: url(/archivos/crew/background-crew-desktop.jpg);
+     flex-direction: column;
+     justify-content: center;
+ }
+ 
+ .informacionAdicional {
+     width: 50%;
+     position: relative;
+ }
+ 
+ .opcion {
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     background-color: rgba(255, 255, 255, 0.397);
+     opacity: .4;
+     cursor: pointer;
+     position: relative;
+     top: 100px;
+     left: 250px;
+ }
+ 
+ .crewmembers ul {
+     justify-content: flex-start;
+ }
+ 
+ .crewmembers ul li::after {
+     content: "";
+     display: none;
+ }
+ 
+ #crew img {
+     width: 400px;
+     position: relative;
+     right: 40px;
+     height: 400px !important;
+ }
+ 
+ .informacion {
+     align-items: center;
+     padding: 0 200px;
+     display: flex;
+ }
+ 
+ .informacion__principal div {
+     margin: 30px 0;
+     position: relative;
+     left: 80px;
+     top: 50px;
+ }
+ 
+ span {
+     font-size: 30px;
+     text-transform: uppercase;
+     opacity: .4;
+ }
+ 
+ .crew__title {
+     position: relative;
+     top: 50px;
+     left: 200px;
+     width: max-content;
+     display: flex;
+     align-items: center;
+ }
+ 
+ .crew__title span {
+     margin: 0 20px;
+ }
+ 
+ #nombreCrew {
+     text-transform: uppercase;
+ }
+ 
+ .informacion.informacion1 {
+     animation: informacion1 .4s 1;
+ }
+ 
+ @keyframes informacion1 {
+     from {
+         transform: translate(-400px, 0px);
+     }
+     to {
+         transform: translate(0px, 0px);
+     }
+ }
+ 
+ .informacion.informacion2 {
+     animation: informacion2 .4s 1;
+ }
+ 
+ @keyframes informacion2 {
+     from {
+         transform: translate(-400px, 0px);
+     }
+     to {
+         transform: translate(0px, 0px);
+     }
+ }
+ 
+ .informacion.informacion3 {
+     animation: informacion3 .4s 1;
+ }
+ 
+ @keyframes informacion3 {
+     from {
+         transform: translate(-400px, 0px);
+     }
+     to {
+         transform: translate(0px, 0px);
+     }
+ }
+ 
+ .informacion.informacion4 {
+     animation: informacion4 .4s 1;
+ }
+ 
+ @keyframes informacion4 {
+     from {
+         transform: translate(-400px, 0px);
+     }
+     to {
+         transform: translate(0px, 0px);
+     }
+ }
+ 
+ .click {
+     background-color: #fff !important;
+     opacity: 1;
+     transition: background-color .4s;
+     color: #000 !important;
+ }
+ 
+ ::-webkit-scrollbar {
+     width: 7px;
+ }
+ /* Track */
+ 
+ ::-webkit-scrollbar-track {
+     background: none;
+ }
+ /* Handle */
+ 
+ ::-webkit-scrollbar-thumb {
+     background: #888;
+     border-radius: 20px;
+ }
+ /* Handle on hover */
+ 
+ ::-webkit-scrollbar-thumb:hover {
+     background: #555;
+ }
+ 
+ #technology {
+     background-image: url(/archivos/technology/background-technology-desktop.jpg);
+     height: 100vh;
+     width: 100%;
+     flex-direction: column;
+     justify-content: center;
+ }
+ 
+ #technology ul {
+     flex-direction: column;
+     width: max-content;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ #technology ul li {
+     margin: 10px 0;
+     border: 1px solid #fff;
+     position: relative;
+     border-radius: 50%;
+     padding: 12px 20px;
+     width: max-content;
+     background-color: transparent;
+     color: #fff;
+     cursor: pointer;
+ }
+ 
+ #technology ul li::after {
+     content: none;
+ }
+ 
+ .parrafo__opciones {
+     width: 70%;
+ }
+ 
+ .descripcion__opciones {
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     padding: 0 200px;
+ }
+ 
+ #opciones {
+     align-items: flex-start;
+     position: relative;
+     top: 350px;
+     left: 80px;
+ }
+ 
+ .technology__title {
+     display: flex;
+     justify-self: center;
+     top: 200px;
+     position: relative;
+     left: 180px;
+     width: max-content;
+     align-items: center;
+ }
+ 
+ #technology img {
+     position: relative;
+     bottom: 100px;
+ }
