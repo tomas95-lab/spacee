@@ -16,7 +16,7 @@ const cambiarImagen = (src, nombre, Distancia, tiempo01) => {
 }
 
 moon.addEventListener("click", (e) => {
-    cambiarImagen(`/archivos/destination/image-moon.webp`, "moon", "384,400 KM", "5,5 DAYS")
+    cambiarImagen(`./archivos/destination/image-moon.webp`, "moon", "384,400 KM", "5,5 DAYS")
     img.classList.remove("mars")
     img.classList.remove("europa")
     img.classList.remove("titan")
@@ -24,21 +24,21 @@ moon.addEventListener("click", (e) => {
 
 })
 mars.addEventListener("click", (e) => {
-    cambiarImagen(`/archivos/destination/image-mars.webp`, "mars", "225,000 KM", "9 MONTHS")
+    cambiarImagen(`./archivos/destination/image-mars.webp`, "mars", "225,000 KM", "9 MONTHS")
     img.classList.remove("moon")
     img.classList.remove("europa")
     img.classList.remove("titan")
     img.classList.add("mars")
 })
 europa.addEventListener("click", (e) => {
-    cambiarImagen(`/archivos/destination/image-europa.webp`, "Europa", "500,000 KM", "1 YEAR")
+    cambiarImagen(`./archivos/destination/image-europa.webp`, "Europa", "500,000 KM", "1 YEAR")
     img.classList.remove("moon")
     img.classList.remove("mars")
     img.classList.remove("titan")
     img.classList.add("europa")
 })
 titan.addEventListener("click", (e) => {
-    cambiarImagen(`/archivos/destination/image-titan.webp`, "Titan", "800,000 KM", "1,5 YEARS")
+    cambiarImagen(`./archivos/destination/image-titan.webp`, "Titan", "800,000 KM", "1,5 YEARS")
     img.classList.remove("moon")
     img.classList.remove("europa")
     img.classList.remove("mars")
@@ -61,7 +61,7 @@ const cambiarImagenCrew = (src, nombre01) => {
 }
 
 opcion1.addEventListener('click', (e) => {
-    cambiarImagenCrew(`/archivos/crew/image-anousheh-ansari.webp`, "anousheh ansari")
+    cambiarImagenCrew(`./archivos/crew/image-anousheh-ansari.webp`, "anousheh ansari")
     informacion.classList.add("informacion1")
     informacion.classList.remove("informacion2")
     informacion.classList.remove("informacion3")
@@ -70,7 +70,7 @@ opcion1.addEventListener('click', (e) => {
 
 })
 opcion2.addEventListener('click', (e) => {
-    cambiarImagenCrew(`/archivos/crew/image-douglas-hurley.webp`, "HURLEY DOUGLAS")
+    cambiarImagenCrew(`./archivos/crew/image-douglas-hurley.webp`, "HURLEY DOUGLAS")
     informacion.classList.add("informacion2")
     informacion.classList.remove("informacion1")
     informacion.classList.remove("informacion3")
@@ -80,7 +80,7 @@ opcion2.addEventListener('click', (e) => {
 })
 
 opcion3.addEventListener('click', (e) => {
-    cambiarImagenCrew(`/archivos/crew/image-mark-shuttleworth.webp`, "mark- huttleworth")
+    cambiarImagenCrew(`./archivos/crew/image-mark-shuttleworth.webp`, "mark- huttleworth")
     informacion.classList.add("informacion3")
     informacion.classList.remove("informacion2")
     informacion.classList.remove("informacion1")
@@ -89,7 +89,7 @@ opcion3.addEventListener('click', (e) => {
 
 })
 opcion4.addEventListener('click', (e) => {
-    cambiarImagenCrew(`/archivos/crew/image-victor-glover.webp`, "victor glover")
+    cambiarImagenCrew(`./archivos/crew/image-victor-glover.webp`, "victor glover")
     informacion.classList.add("informacion4")
     informacion.classList.remove("informacion2")
     informacion.classList.remove("informacion3")
@@ -120,15 +120,15 @@ const cambiarImagentecnologia = (src01, nombre02) => {
 }
 technoopcion1.addEventListener('click', (e) => {
     cambiarColorTechno(technoopcion1, technoopcion2, technoopcion3)
-    cambiarImagentecnologia(`/archivos/technology/image-launch-vehicle-portrait.jpg`, "LAUNCH VEHICLE")
+    cambiarImagentecnologia(`./archivos/technology/image-launch-vehicle-portrait.jpg`, "LAUNCH VEHICLE")
 
 })
 technoopcion2.addEventListener('click', (e) => {
     cambiarColorTechno(technoopcion2, technoopcion1, technoopcion3)
-    cambiarImagentecnologia(`/archivos/technology/image-space-capsule-portrait.jpg`, "SPACE CAPSULE")
+    cambiarImagentecnologia(`./archivos/technology/image-space-capsule-portrait.jpg`, "SPACE CAPSULE")
 
 })
 technoopcion3.addEventListener('click', (e) => {
     cambiarColorTechno(technoopcion3, technoopcion2, technoopcion1)
-    cambiarImagentecnologia("/archivos/technology/image-spaceport-portrait.jpg", "SPACEPORT")
+    cambiarImagentecnologia("./archivos/technology/image-spaceport-portrait.jpg", "SPACEPORT")
 })

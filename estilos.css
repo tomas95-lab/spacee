@@ -6,7 +6,7 @@
  }
  
  section {
-     background-image: url(/archivos/home/background-home-desktop.jpg);
+     background-image: url(./archivos/home/background-home-desktop.jpg);
      height: 100vh;
      background-attachment: fixed;
      background-size: 100%;
@@ -28,7 +28,7 @@
  nav {
      display: flex;
      background: transparent;
-     padding: 30px 100px !important;
+     padding: 26px 100px !important;
      position: relative;
      right: 0 !important;
      overflow: hidden;
@@ -147,7 +147,7 @@
  }
  
  #destination {
-     background-image: url(/archivos/destination/background-destination-desktop.jpg);
+     background-image: url(./archivos/destination/background-destination-desktop.jpg);
      height: 100vh;
      flex-direction: column;
      padding: 200px;
@@ -173,6 +173,11 @@
  
  .planet-description {
      margin: 40px 0 70px 0;
+ }
+ 
+ .info-planet {
+     position: relative;
+     bottom: 100px;
  }
  
  .options {
@@ -213,6 +218,8 @@
  
  #name {
      text-transform: uppercase !important;
+     position: relative;
+     bottom: 30px;
  }
  
  .planet-img {
@@ -282,7 +289,7 @@
  .crew {
      height: 100vh;
      width: 100%;
-     background-image: url(/archivos/crew/background-crew-desktop.jpg);
+     background-image: url(./archivos/crew/background-crew-desktop.jpg);
      flex-direction: column;
      justify-content: center;
  }
@@ -436,8 +443,8 @@
  }
  
  #technology {
-     background-image: url(/archivos/technology/background-technology-desktop.jpg);
-     height: 100vh;
+     background-image: url(./archivos/technology/background-technology-desktop.jpg);
+     height: 110vh;
      width: 100%;
      flex-direction: column;
      justify-content: center;
